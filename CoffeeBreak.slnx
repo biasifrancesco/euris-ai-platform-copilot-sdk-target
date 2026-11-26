@@ -6,4 +6,7 @@
     <File Path="README.md" />
     <File Path="global.json" />
   </Folder>
+  <Folder Name="/src/">
+    <Project Path="src/CoffeeBreak.Api/CoffeeBreak.Api.csproj" />
+  </Folder>
 </Solution>
