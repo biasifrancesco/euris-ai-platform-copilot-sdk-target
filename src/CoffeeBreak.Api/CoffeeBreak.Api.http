@@ -1,0 +1,21 @@
+@host = http://localhost:5080
+
+### Elenco del menu
+GET {{host}}/menu
+
+### Ordina un cappuccino
+POST {{host}}/orders
+Content-Type: application/json
+
+{
+  "drinkId": "cappuccino",
+  "quantity": 2
+}
+
+### Bevanda sconosciuta (400)
+POST {{host}}/orders
+Content-Type: application/json
+
+{
+  "drinkId": "tè"
+}
